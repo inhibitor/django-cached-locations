@@ -71,12 +71,3 @@ def gm_get_location(latitude, longitude):
     else:
         raise AddressNotFound('Location (%s, %s) was not found' % (str(latitude), str(longitude)))
 
-
-# Simple tests
-def main():
-    print(gm_get_coordinates("Россия, Ставрополь, 1-ая Промышленная 3а"))
-    print(gm_get_location(Decimal(45.009209), Decimal(41.924027)))
-
-
-if __name__ == '__main__':
-    main()
